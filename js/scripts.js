@@ -44,3 +44,6 @@ $(document).ready(function(){
     $(".content_support").hide();
   });
 });
+
+
+function jump(hash) { location.replace("#" + hash) }
