@@ -275,21 +275,6 @@ section.latest_news .readmore_button {
 }
 
 
-section.latest_news .navigation_arrows {
-	position: absolute;
-	width: 90%;
-}
-
-section.latest_news div.arrow.left {
- position: absolute;
- left:10px;
-}
-
-section.latest_news div.arrow.right {
-	position: absolute;
-  right:10px;
-}
-
 
 
 /* HOME - SECTION - EXIBITIONS */
@@ -414,25 +399,6 @@ section.next_event .readmore_button {
 	border: 3px solid #F0B202;
 }
 
-section.next_event .navigation_arrows {
-	position: absolute;
-	width: 90%;
-}
-
-section.next_event div.arrow.left {
- position: absolute;
- left:10px;
- top: 10px;
-}
-section.next_event div.arrow.left img {
-	fill: #EFF0F2 !important;
-}
-
-section.next_event div.arrow.right {
-	position: absolute;
-  right:10px;
-  top: 10px;
-}
 
 /* SECTION - NEWSLETTER */
 section.newsletter {
@@ -1080,10 +1046,6 @@ footer .address {
 		font-size: 2em;
 	}
 
-	section.latest_news .navigation_arrows {
-		width: 96%;
-	}
-
 	section.opening_hours h2 {
 		font-size: 5em !important;
 	}
@@ -1180,24 +1142,7 @@ footer .address {
 		width:40%;
 	}
 
-	.navigation_arrows img {
-		width: 50%;
-	}
 
-
-	section.next_event .navigation_arrows {
-		width: 88%;
-	}
-
-	section.next_event div.arrow.left {
-		top: 0px;
-		left: 160px;
-	}
-
-	section.next_event div.arrow.right {
-		top: 0px;
-
-	}
 
   header .slogan {
 		font-size:  5em;
@@ -1234,19 +1179,7 @@ footer .address {
 	}
 
 
-	section.latest_news .navigation_arrows {
-		width: 88%;
-	}
 
-	section.latest_news div.arrow.left {
-		top: 0px;
-		left: 160px;
-	}
-
-	section.latest_news div.arrow.right {
-		top: 0px;
-
-	}
 
 	section.exibitions .content {
 		font-size: 2em;
@@ -1433,46 +1366,6 @@ footer .address {
 		}
 
 
-	  /* NAVIGATION ARROWS - HOME */
-
-
-		section.latest_news .navigation_arrows {
-			width: 50%;
-		}
-
-		section.latest_news .navigation_arrows img {
-			width: 30%;
-		}
-
-		section.latest_news div.arrow.left {
-			top: 0px;
-			left: 0px;
-		}
-
-		section.latest_news div.arrow.right {
-			top: 0px;
-			right: 220px;
-
-		}
-
-
-		section.next_event .navigation_arrows {
-			width: 60%;
-		}
-
-		section.next_event .navigation_arrows img {
-			width: 30%;
-		}
-
-		section.next_event div.arrow.left {
-			top: 0px;
-			left: 200px;
-		}
-
-		section.next_event div.arrow.right {
-			top: 0px;
-
-		}
 
 	  header .slogan {
 			font-size:  5em;
