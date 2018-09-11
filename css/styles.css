@@ -21,6 +21,7 @@ body {
   padding: 0;
   color: #07288D;
 	max-width: 1200px;
+	border: 5px solid #58B4DC;
 
 }
 
@@ -158,7 +159,7 @@ header .slogan {
   width:100%;
   font-size: 1.5em;
   color: #EFF0F2;
-
+	font-family: "balboa-plus-fill",sans-serif;
 }
 
 /* SECTION - GENERAL HEADER */
@@ -484,9 +485,7 @@ section.newsletter input[type=submit] {
 
 
 
-
-/* EXPLORE */
-/* SECTION - EXPLORE */
+/* EXPLORE - SECTION - EXPLORE */
 section.explore {
 	background-color: #D83203;
 }
@@ -565,7 +564,7 @@ section.explore div.content_researchers {
 
 
 
-/* SECTION - COSMOLOGY */
+/* EXIBITION SPACES - SECTION - COSMOLOGY */
 section.cosmology {
 	background-color: #58B4DC;
 }
@@ -581,7 +580,7 @@ section.cosmology .explore_content {
 }
 
 
-/* SECTION - EVOLUTION */
+/* EXIBITION SPACES - SECTION - EVOLUTION */
 section.evolution {
 	background-color: #D83203;
 }
@@ -597,7 +596,7 @@ section.evolution .explore_content {
 }
 
 
-/* SECTION - BIOLOGY AND MEDICINE */
+/* EXIBITION SPACES - SECTION - BIOLOGY AND MEDICINE */
 section.biologyandmedicine {
 	background-color: #F0B202;
 }
@@ -612,7 +611,7 @@ section.biologyandmedicine .explore_content {
 	padding: 10px 0px;
 }
 
-/* SECTION - ROBOTICS AND AI */
+/* EXIBITION SPACES - SECTION - ROBOTICS AND AI */
 section.roboticsandai {
 	background-color: #58B4DC;
 }
@@ -627,7 +626,7 @@ section.roboticsandai .explore_content {
 	padding: 10px 0px;
 }
 
-/* SECTION - ECOLOGY */
+/* EXIBITION SPACES - SECTION - ECOLOGY */
 section.ecology {
 	background-color: #F0B202;
 }
@@ -643,7 +642,7 @@ section.ecology .explore_content {
 }
 
 
-/* EXIBITION SPACES GENERAL STYLES */
+/* EXIBITION SPACES - EXIBITION SPACES GENERAL STYLES */
 
 main.exibitions .explore_image {
 	background-size: cover;
@@ -702,7 +701,7 @@ section.evolution .readmore a {
 }
 
 
-/* SPECIAL EVENTS AND EXIBITIONS - SECTION - events_and_exibitions  */
+/* SPECIAL EVENTS AND EXIBITIONS - SECTION - EVENTS AND EXIBITIONS  */
 
 main.events_and_exibitions section.header {
 	min-height: 130px;
@@ -758,7 +757,7 @@ section.events .content {
 
 /* VISIT - SECTION - LOCATION */
 section.location  {
-	background-color: #07288D;
+	background-color: #58B4DC;
 }
 
 section.location .left {
@@ -768,7 +767,7 @@ section.location .left {
 }
 
 section.location .right {
-	color: #F0B202;
+	color: ##07288D;
 	text-align: center;
 }
 
@@ -778,7 +777,7 @@ section.info {
 }
 
 
-/* GET INVOLVED - SECTION - get_involved */
+/* GET INVOLVED - SECTION - GET INVOLVED */
 main.get_involved section.header div.header_icon img{
 	width: 100%;
 }
@@ -875,6 +874,7 @@ footer .footer_element {
 footer {
   display: inline-block;
 	background-color: #58B4DC !important;
+	width: 100%;
 }
 
 #footer_logo {
@@ -937,11 +937,38 @@ footer .address {
 	{
 		font-size: 1.2em;
 	}
+
+	section.newsletter input[type=text] {
+		font-size: 0.8em;
+	}
+
+	section.newsletter input[type=submit] {
+		font-size: 0.8em;
+	}
+
+	iframe {
+		width: 250px;
+	}
+
+
 }
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 767px) {
+@media only screen and (min-device-width : 414px) and (max-device-width : 519px) {
 	section.explore_together h1 {
 		font-size: 1.1em;
+	}
+	section.explore div.researchers {
+		width: 34%;
+	}
+	section.get_involved div.support {
+		width: 34%;
+	}
+
+}
+
+@media only screen and (min-device-width : 520px) and (max-device-width : 767px) {
+	section.explore_together h1 {
+		font-size: 3em;
 	}
 	section.explore div.researchers {
 		width: 34%;
@@ -968,6 +995,12 @@ footer .address {
 	.navbar-dark .navbar-nav .nav-link {
 		font-size: 1.5em;
 	}
+
+	header .slogan {
+		font-family: "balboa-plus-inline",sans-serif;
+		font-size: 3em;
+	}
+
 
 	section.explore_together h1 {
 		font-size: 2.2em;
@@ -1000,6 +1033,10 @@ footer .address {
 	section.exibitions .exibition_headlines h3
 	{
 		font-size: 5em !important;
+	}
+
+	section.exibitions .readmore_button {
+		font-size: 2em;
 	}
 
 	section.latest_news .navigation_arrows {
@@ -1096,7 +1133,7 @@ footer .address {
 		}
 }
 
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1336px) {
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1200px) {
 
 	#logo img {
 		width:50%;
@@ -1107,7 +1144,7 @@ footer .address {
 	}
 
 	section.exibitions .navigation_arrows {
-		width: 90%;
+		width: 88%;
 	}
 
 	section.exibitions div.arrow.left {
@@ -1121,7 +1158,7 @@ footer .address {
 	}
 
 	section.next_event .navigation_arrows {
-		width: 90%;
+		width: 88%;
 	}
 
 	section.next_event div.arrow.left {
@@ -1165,6 +1202,23 @@ footer .address {
 		{
 			font-size: 3em;
 		}
+
+
+		section.latest_news .navigation_arrows {
+			width: 88%;
+		}
+
+		section.latest_news div.arrow.left {
+			top: 0px;
+			left: 160px;
+		}
+
+		section.latest_news div.arrow.right {
+			top: 0px;
+
+		}
+
+
 
 
 		section.exibitions .content {
@@ -1336,6 +1390,330 @@ footer .address {
 
 }
 
-@media only screen  and (min-width : 1224px) {
+@media only screen and (min-width : 1201px) {
+
+		#logo img {
+			width:40%;
+		}
+
+		.navbar-dark .navbar-nav .nav-link {
+			color: #07288D;
+		}
+
+		section.explore_together .headline {
+			color: #EFF0F2;
+			font-size: 4em;
+		}
+
+
+	  /* NAVIGATION ARROWS - HOME */
+
+
+		section.latest_news .navigation_arrows {
+			width: 50%;
+		}
+
+		section.latest_news .navigation_arrows img {
+			width: 30%;
+		}
+
+		section.latest_news div.arrow.left {
+			top: 0px;
+			left: 0px;
+		}
+
+		section.latest_news div.arrow.right {
+			top: 0px;
+			right: 220px;
+
+		}
+
+		section.exibitions .navigation_arrows {
+			width: 37%;
+		}
+
+		section.exibitions .navigation_arrows img {
+			width: 30%;
+		}
+
+
+		section.exibitions div.arrow.left {
+			top: -60px;
+			left: 0px;
+		}
+
+		section.exibitions div.arrow.right {
+			top: -60px;
+
+		}
+
+		section.next_event .navigation_arrows {
+			width: 60%;
+		}
+
+		section.next_event .navigation_arrows img {
+			width: 30%;
+		}
+
+		section.next_event div.arrow.left {
+			top: 0px;
+			left: 200px;
+		}
+
+		section.next_event div.arrow.right {
+			top: 0px;
+
+		}
+
+	  header .slogan {
+			font-size:  5em;
+		}
+
+
+		section {
+			width: 50%;
+			padding:30px !important;
+		}
+
+		section.next_event,
+		section.newsletter {
+			width: 100%;
+		}
+
+		section.opening_hours {
+			background-color: #F0B202;
+		}
+
+		main {
+
+		   -webkit-display: flex;
+		   -ms-display: flex;
+		   display: flex;
+
+			 -webkit-flex-direction: row;
+			 -ms-flex-direction: row;
+		   flex-direction: row;
+
+			 -ms-flex-wrap: wrap;
+			 -moz-flex-wrap: wrap;
+			 -webkit-flex-wrap: wrap;
+
+		   justify-content: flex-start;
+		}
+
+
+		.navbar-dark .navbar-nav .nav-link {
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		section.explore_together h1 {
+			font-size: 1.5em;
+			margin-bottom: 30px;
+		}
+
+		section.explore_together .content {
+			font-size: 1.8em;
+			margin-top: 20px;
+		}
+
+		section.latest_news {
+			-webkit-display: flex;
+			-ms-display: flex;
+			display: flex;
+
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+
+			justify-content: flex-start;
+		}
+
+		section.latest_news .content {
+			font-size: 2em;
+		}
+
+		section.latest_news h2 {
+			font-size: 1.4em;
+			-ms-flex-order: -1;
+			-webkit-order: -1;
+			order: -1;
+
+		}
+		section.latest_news h3
+		{
+			font-size: 2.2em;
+			-ms-flex-order: 0;
+			-webkit-order: 0;
+			order: 0;
+		}
+
+		section.latest_news .content_image {
+			width: 100%;
+			-ms-flex-order: 1;
+			-webkit-order: 1;
+			order: 1;
+		}
+
+		section.latest_news .content {
+			display: block;
+			width: 100%;
+			-ms-flex-order: 2;
+			-webkit-order: 2;
+			order: 2;
+		}
+
+		section.exibitions .exibition_headlines {
+			width: 100%;
+		}
+
+		section.exibitions .head_image {
+			width: 100%;
+		}
+
+		section.exibitions .content {
+			font-size: 2em;
+		}
+
+		section.exibitions .exibition_headlines h2 {
+			font-size: 4em !important;
+		}
+		section.exibitions .exibition_headlines h3
+		{
+			font-size: 6em !important;
+		}
+
+		section.exibitions .readmore_button {
+			font-size: 3em;
+		}
+
+
+		section.opening_hours h2 {
+			font-size: 5em !important;
+		}
+
+
+		section.opening_hours .left {
+			font-size: 1.3em;
+			margin-bottom: 30px;
+			width: 30%;
+
+		}
+		section.opening_hours .right {
+			width: 60%;
+			font-size: 1.8em;
+			margin-bottom: 30px;
+		}
+
+		section.next_event {
+			font-size: 2em !important;
+		}
+
+		section.next_event h3,
+		section.next_event h4
+		{
+			font-size: 2em !important;
+			margin: 20px 0px;
+		}
+
+		section.next_event .content p {
+			font-size: 0.8em;
+		}
+
+		section.newsletter {
+			font-size: 1.5em !important;
+		}
+
+		footer {
+			font-size: 2.5em !important;
+
+		}
+
+		section.newsletter {
+			font-size: 3em !important;
+			text-align: center;
+			min-height: 250px;
+		}
+
+
+
+		/* EXPLORE */
+
+
+	 main.explore section.header {
+			background: url("../images/explore_together.jpg") no-repeat;
+			background-size: cover;
+		}
+
+		section.header .headline {
+			font-size: 8em;
+		}
+
+		section.header .header_icon img {
+			width: 100%;
+		}
+
+		section.explore div.tabs div {
+
+		}
+		section.explore div.tabs div {
+			width: 100%;
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			font-size: 2em;
+		}
+
+		section.explore div.content_kids,
+		section.explore div.content_teachers,
+		section.explore div.content_researchers
+		 {
+			margin: 0px;
+		}
+
+		/* EXIBITIONS */
+
+		main section {
+			border: 5px solid #EFF0F2;
+		}
+
+		main.exibitions section.header .header_icon {
+			display: none;
+		}
+
+		main.exibitions section.header {
+ 			background: url("../images/exibition_spaces.jpg") no-repeat;
+ 			background-size: cover;
+ 		}
+
+		/* EVENTS */
+		section.event {
+			width: 100%;
+		}
+
+		/* VISIT */
+		main.visit section.header {
+			width: 100%;;
+		}
+
+		/* GET INVOLVED */
+
+		section.get_involved div.tabs div {
+
+		}
+		section.get_involved div.tabs div {
+			width: 100%;
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			font-size: 2em;
+		}
+
+		section.get_involved div.content_support,
+		section.get_involved div.content_volunteer,
+		section.get_involved div.content_internships
+		 {
+			margin: 0px;
+		}
 
 }
