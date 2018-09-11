@@ -358,7 +358,7 @@ section.opening_hours .headline h2 {
 section.opening_hours .left {
 	float: left;
 	font-size: 0.8em;
-	width: 50%;
+	width: 30%;
 }
 
 section.opening_hours .right {
@@ -659,7 +659,7 @@ main.exibitions .explore_title {
 	display: inline;
 	padding: 7px;
 	font-family: "balboa-plus-primary",sans-serif;
-	font-size: 1.6em;
+	font-size: 2.6em;
 	position: absolute;
 	bottom: 7px;
 	right: 7px;
@@ -1509,7 +1509,7 @@ footer .address {
 		}
 
 		section.explore_together h1 {
-			font-size: 1.5em;
+			font-size: 1.4em;
 			margin-bottom: 30px;
 		}
 
@@ -1654,9 +1654,7 @@ footer .address {
 			width: 100%;
 		}
 
-		section.explore div.tabs div {
 
-		}
 		section.explore div.tabs div {
 			width: 100%;
 			display: block;
@@ -1692,16 +1690,37 @@ footer .address {
 			width: 100%;
 		}
 
-		/* VISIT */
+
+		main.events_and_exibitions section.header {
+ 			background: url("../images/events_background.jpg") no-repeat;
+ 			background-size: cover;
+ 		}		/* VISIT */
+
+
+		main.visit section.header {
+ 			background: url("../images/exibition_spaces.jpg") no-repeat;
+ 			background-size: cover;
+ 		}
+
 		main.visit section.header {
 			width: 100%;;
 		}
 
+		main.visit section.header .header_icon img {
+			width: 50%;
+		}
+
+		main.visit section.location,
+		main.visit section.info {
+			font-size: 1.5em;
+		}
+
+		main.visit iframe {
+			width: 80%;
+		}
+
 		/* GET INVOLVED */
 
-		section.get_involved div.tabs div {
-
-		}
 		section.get_involved div.tabs div {
 			width: 100%;
 			display: block;
@@ -1709,6 +1728,13 @@ footer .address {
 			padding: 0px;
 			font-size: 2em;
 		}
+
+
+		main.get_involved section.header {
+ 			background: url("../images/ecology.jpg") no-repeat;
+ 			background-size: cover;
+ 		}
+
 
 		section.get_involved div.content_support,
 		section.get_involved div.content_volunteer,
