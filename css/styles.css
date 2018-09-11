@@ -82,6 +82,19 @@ section, header, footer {
   padding: 15px;
 }
 
+
+header {
+
+	background:
+     /* top, transparent red, faked with gradient */
+     linear-gradient(
+       rgba(7, 40, 141, 0.35),
+       rgba(88, 180, 220, 1)
+     ),
+     /* bottom, image */
+     url(../images/background.jpg);
+	background-size: cover;
+}
 header .explore.button {
   float:right;
   width: 22%;
@@ -211,7 +224,7 @@ section.explore_together .content {
 	display: inline-block;
 	color: #EFF0F2;
 	font-size: 0.8em;
-	padding-top:10px;
+	padding-top:20px;
 
 }
 
@@ -239,6 +252,7 @@ section.latest_news .content {
 	width:50%;
 	font-size: 0.8em;
 	margin-top: 10px;
+	text-align: center;
 }
 
 section.latest_news .content_image {
@@ -249,7 +263,6 @@ section.latest_news .content_image {
 section.latest_news .content_image img {
 	width:100%;
 }
-
 section.latest_news .readmore_button {
 	color: #EFF0F2;
 	background-color: #D83203;
@@ -321,28 +334,14 @@ section.exibitions .readmore_button {
 	border: 3px solid #F0B202;
 }
 
-section.exibitions .navigation_arrows {
-	position: absolute;
-	width: 90%;
-}
 
-section.exibitions div.arrow.left {
- position: absolute;
- left:10px;
- top: -30px;
-}
-
-section.exibitions div.arrow.right {
-	position: absolute;
-  right:10px;
-  top: -30px;
-}
 
 /* HOME - SECTION - OPENING HOURS */
 
 section.opening_hours {
 	background-color: #EFF0F2;
 	color: #D83203;
+	padding:40px;
 	min-height: 330px;
 }
 
@@ -941,6 +940,10 @@ footer .address {
 		font-size: 0.9em;
 	}
 
+	main.exibitions .explore_title {
+			font-size: 2em;
+	}
+
 	section.explore div.forkids a,
 	section.explore div.teachers a,
 	section.explore div.researchers a
@@ -1176,19 +1179,6 @@ footer .address {
 		width: 50%;
 	}
 
-	section.exibitions .navigation_arrows {
-		width: 88%;
-	}
-
-	section.exibitions div.arrow.left {
-		top: -80px;
-		left: 160px;
-	}
-
-	section.exibitions div.arrow.right {
-		top: -80px;
-
-	}
 
 	section.next_event .navigation_arrows {
 		width: 88%;
@@ -1460,24 +1450,6 @@ footer .address {
 
 		}
 
-		section.exibitions .navigation_arrows {
-			width: 37%;
-		}
-
-		section.exibitions .navigation_arrows img {
-			width: 30%;
-		}
-
-
-		section.exibitions div.arrow.left {
-			top: -60px;
-			left: 0px;
-		}
-
-		section.exibitions div.arrow.right {
-			top: -60px;
-
-		}
 
 		section.next_event .navigation_arrows {
 			width: 60%;
@@ -1704,7 +1676,7 @@ footer .address {
 		/* EXIBITIONS */
 
 		main section {
-			border: 5px solid #EFF0F2;
+			border: 10px solid #EFF0F2;
 		}
 
 		main.exibitions section.header .header_icon {
