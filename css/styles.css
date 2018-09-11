@@ -880,24 +880,39 @@ footer {
 }
 
 #footer_logo {
-  text-align: left;
+  text-align: center;
 }
 
 
 #footer_logo img {
-  width:80%;
+  width:70%;
 }
 
+footer .social_icons {
+	-webkit-display: flex;
+	-ms-display: flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	justify-content: center;
+
+}
 
 footer .social_icons a {
-  float:right;
 
-  width: 40%;
+  width:40%;
 }
 
 footer .social_icons a img {
-  width: 80%;
-  margin: 5px 0px;
+  width: 70%;
+  margin: 10px 0px;
   margin-top: 0px;
 }
 
