@@ -75,18 +75,6 @@ a:focus {
  font-family: 'balboa-plus-fill', Helvetica, sans-serif;
 }
 
-@mixin clearfix() {
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-}
-
-// Usage as a mixin
-.element {
-  @include clearfix;
-}
 
 /* HEADER */
 
@@ -187,9 +175,8 @@ section.header .header_icon img {
 	width: 55%;
 }
 
-/* HOME */
 
-/* SECTION - EXPLORE TOGETHER */
+/* HOME - SECTION - EXPLORE TOGETHER */
 
 section.explore_together {
 
@@ -287,7 +274,7 @@ section.latest_news div.arrow.right {
 
 
 
-/* SECTION - EXIBITIONS */
+/* HOME - SECTION - EXIBITIONS */
 section.exibitions {
 	background-color: #58B4DC;
 }
@@ -334,8 +321,6 @@ section.exibitions .readmore_button {
 	border: 3px solid #F0B202;
 }
 
-
-
 section.exibitions .navigation_arrows {
 	position: absolute;
 	width: 90%;
@@ -353,7 +338,7 @@ section.exibitions div.arrow.right {
   top: -30px;
 }
 
-/* SECTION - OPENING HOURS */
+/* HOME - SECTION - OPENING HOURS */
 
 section.opening_hours {
 	background-color: #EFF0F2;
@@ -382,7 +367,7 @@ section.opening_hours .right {
 	width: 50%;
 }
 
-/* SECTION - EVENTS */
+/* HOME - SECTION - EVENTS */
 section.next_event {
 	background-color: #07288D;
 	color: #EFF0F2;
@@ -490,9 +475,27 @@ section.explore {
 	background-color: #D83203;
 }
 
+
+div.tabs {
+
+				-webkit-display: flex;
+				-ms-display: flex;
+				display: flex;
+
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+
+				-ms-flex-wrap: wrap;
+				-moz-flex-wrap: wrap;
+				-webkit-flex-wrap: wrap;
+
+				justify-content: center;
+}
+
 section.explore div.forkids {
 	background-color: #F0B202;
-	width: 35%;
+	width: 34%;
 	margin-left: -12px;
 	float:left;
 	text-align: center;
@@ -508,7 +511,7 @@ section.explore div.forkids a {
 
 section.explore div.teachers {
 	background-color: #07288D;
-	width: 35%;
+	width: 34%;
 	float:left;
 	text-align: center;
 	margin: 0px 3px;
@@ -523,7 +526,7 @@ section.explore div.teachers a {
 
 section.explore div.researchers {
 	background-color: #EFF0F2;
-	width: 35%;
+	width: 34%;
 	margin-right: -12px;
 	float:left;
 	text-align: center;
@@ -767,7 +770,7 @@ section.location .left {
 }
 
 section.location .right {
-	color: ##07288D;
+	color: #07288D;
 	text-align: center;
 }
 
@@ -789,7 +792,7 @@ section.get_involved {
 
 section.get_involved div.support {
 	background-color: #F0B202;
-	width: 35%;
+	width: 33%;
 	margin-left: -12px;
 	float:left;
 	text-align: center;
@@ -805,7 +808,7 @@ section.get_involved div.support a {
 
 section.get_involved div.volunteer {
 	background-color: #07288D;
-	width: 35%;
+	width: 33%;
 	float:left;
 	text-align: center;
 	margin: 0px 3px;
@@ -820,7 +823,7 @@ section.get_involved div.volunteer a {
 
 section.get_involved div.internships {
 	background-color: #EFF0F2;
-	width: 35%;
+	width: 33%;
 	margin-right: -12px;
 	float:left;
 	text-align: center;
@@ -857,7 +860,6 @@ section.get_involved div.content_internships {
 	margin: 3px -11px 3px -11px;
 	padding: 15px 14px 15px 15px;
 }
-
 
 
 
@@ -919,7 +921,7 @@ footer .address {
 /* MOBILE AND DESKTOP STYLES */
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 413px) {
+@media only screen and (min-width : 320px) and (max-width : 413px) {
 	section.explore_together h1 {
 		font-size: 0.9em;
 	}
@@ -953,7 +955,7 @@ footer .address {
 
 }
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 519px) {
+@media only screen and (min-width : 414px) and (max-width : 519px) {
 	section.explore_together h1 {
 		font-size: 1.1em;
 	}
@@ -966,7 +968,7 @@ footer .address {
 
 }
 
-@media only screen and (min-device-width : 520px) and (max-device-width : 767px) {
+@media only screen and (min-width : 520px) and (max-width : 767px) {
 	section.explore_together h1 {
 		font-size: 3em;
 	}
@@ -978,14 +980,14 @@ footer .address {
 	}
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+@media only screen and (min-width : 768px) and (max-width : 989px) {
 
 	#logo {
 		margin-top: 20px;
 	}
 
 	#logo img {
-		width: 50%;
+		width: 30%;
 	}
 
 	.navbar-dark .navbar-toggler {
@@ -1075,7 +1077,7 @@ footer .address {
 	section.explore div.forkids,
 	section.explore div.teachers,
 	section.explore div.researchers {
-		width: 34%;
+		width: 33%;
 	}
 	section.explore div.support {
 		width: 33%;
@@ -1118,25 +1120,25 @@ footer .address {
 	}
 
 
-		section.explore div.forkids a,
-		section.explore div.teachers a,
-		section.explore div.researchers a
-		{
-			width: 34%;
-		}
+	section.explore div.forkids a,
+	section.explore div.teachers a,
+	section.explore div.researchers a
+	{
+		width: 34%;
+	}
 
-		section.get_involved div.support,
-		section.get_involved div.volunteer,
-		section.get_involved div.internships
-		{
-			width: 34%;
-		}
+	section.get_involved div.support,
+	section.get_involved div.volunteer,
+	section.get_involved div.internships
+	{
+		width: 34%;
+	}
 }
 
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1200px) {
+@media only screen and (min-width : 990px) and (max-width : 1200px) {
 
 	#logo img {
-		width:50%;
+		width:40%;
 	}
 
 	.navigation_arrows img {
@@ -1191,204 +1193,203 @@ footer .address {
 	}
 
 
-		section.latest_news .content {
-			font-size: 2em;
-		}
-		section.latest_news h2 {
-			font-size: 2em;
+	section.latest_news .content {
+		font-size: 2em;
+	}
 
-		}
-		section.latest_news h3
-		{
-			font-size: 3em;
-		}
+	section.latest_news h2 {
+		font-size: 2em;
 
+	}
 
-		section.latest_news .navigation_arrows {
-			width: 88%;
-		}
-
-		section.latest_news div.arrow.left {
-			top: 0px;
-			left: 160px;
-		}
-
-		section.latest_news div.arrow.right {
-			top: 0px;
-
-		}
+	section.latest_news h3
+	{
+		font-size: 3em;
+	}
 
 
+	section.latest_news .navigation_arrows {
+		width: 88%;
+	}
+
+	section.latest_news div.arrow.left {
+		top: 0px;
+		left: 160px;
+	}
+
+	section.latest_news div.arrow.right {
+		top: 0px;
+
+	}
+
+	section.exibitions .content {
+		font-size: 2em;
+	}
+
+	section.exibitions .exibition_headlines h2 {
+		font-size: 4em !important;
+	}
+	section.exibitions .exibition_headlines h3
+	{
+		font-size: 6em !important;
+	}
+
+	section.exibitions .readmore_button {
+		font-size: 3em;
+	}
 
 
-		section.exibitions .content {
-			font-size: 2em;
-		}
+	section.opening_hours h2 {
+		font-size: 5em !important;
+	}
 
-		section.exibitions .exibition_headlines h2 {
-			font-size: 4em !important;
-		}
-		section.exibitions .exibition_headlines h3
-		{
-			font-size: 6em !important;
-		}
+	section.opening_hours .left,
+	section.opening_hours .right
+	{
+		font-size: 2em;
+		margin-bottom: 30px;
+	}
 
-		section.exibitions .readmore_button {
-			font-size: 3em;
-		}
+	section.next_event {
+		font-size: 2em !important;
+	}
 
+	section.next_event h3,
+	section.next_event h4
+	{
+		font-size: 2em !important;
+		margin: 20px 0px;
+	}
 
+	section.next_event .content p {
+		font-size: 1.2em;
+	}
 
+	section.newsletter {
+		font-size: 1.5em !important;
+	}
 
-		section.opening_hours h2 {
-			font-size: 5em !important;
-		}
+	footer {
+		font-size: 2.5em !important;
 
+	}
 
-		section.opening_hours .left,
-		section.opening_hours .right
-		{
-			font-size: 2em;
-			margin-bottom: 30px;
-		}
-
-		section.next_event {
-			font-size: 2em !important;
-		}
-
-		section.next_event h3,
-		section.next_event h4
-		{
-			font-size: 2em !important;
-			margin: 20px 0px;
-		}
-
-		section.next_event .content p {
-			font-size: 1.2em;
-		}
-
-		section.newsletter {
-			font-size: 1.5em !important;
-		}
-
-		footer {
-			font-size: 2.5em !important;
-
-		}
-
-		section.newsletter {
-			font-size: 3em !important;
-			text-align: center;
-			min-height: 250px;
-		}
+	section.newsletter {
+		font-size: 3em !important;
+		text-align: center;
+		min-height: 250px;
+	}
 
 
-		section.header h1 {
-			font-size: 3em;
-			margin-bottom: 20px;
-		}
+	section.header h1 {
+		font-size: 3em;
+		margin-bottom: 20px;
+	}
 
-		section.explore div.forkids {
-				width: 33%;
-				font-size: 2.5em;
-				margin-left: -3px;
-		}
-
-		section.explore div.teachers {
-				width: 33%;
-				font-size: 2.5em;
-		}
-
-		section.explore div.researchers {
-				width: 34%;
-				font-size: 2.5em;
-		}
-
-		section.explore div.content_kids,
-		section.explore div.content_teachers,
-		section.explore div.content_researchers  {
-			font-size: 1.7em;
-			margin: 3px -3px;
-		}
-
-		section.get_involved div.support {
-				width: 33%;
-				font-size: 2.5em;
-				margin-left: -3px;
-		}
-
-		section.get_involved div.volunteer {
-				width: 33%;
-				font-size: 2.5em;
-		}
-
-		section.get_involved div.internships {
-				width: 34%;
-				font-size: 2.5em;
-		}
-
-		section.get_involved div.content_support,
-		section.get_involved div.content_volunteer,
-		section.get_involved div.content_internships  {
-			font-size: 1.7em;
-			margin: 3px -3px;
-		}
-
-		main.exibitions .header_icon img {
-			width: 100%;
-			margin-top: 40px;
-		}
-
-		main.exibitions .readmore,
-		main.exibitions .explore_title {
-			font-size: 2em;
-		}
-
-		main.exibitions .explore_content {
-			font-size: 1.5em !important;
-		}
-		main.exibitions div.explore_image {
-			min-height: 400px;
-		}
-
-		main.exibitions .readmore,
-		main.exibitions .explore_title {
-			font-size: 4em;
-		}
-
-		main.exibitions .explore_content {
-			font-size: 2em !important;
-		}
-		main.exibitions div.explore_image {
-			min-height: 600px;
-		}
-
-
-
-		main.events_and_exibitions .content {
-			font-size: 2.2em;
-		}
-
-		main.events_and_exibitions .headline span
-		{
-			font-size: 2.8em !important;
-		}
-
-
-		main.events_and_exibitions .timelocation span {
-			font-size: 3em !important;
-		}
-
-		section.location,
-		section.info {
+	section.explore div.forkids {
+			width: 33% !important;
 			font-size: 2.5em;
-		}
+			margin-left: -3px;
+	}
 
-		section.location iframe {
-			width: 80%;
-		}
+	section.explore div.teachers {
+			width: 33% !important;
+			font-size: 2.5em;
+	}
 
+	section.explore div.researchers {
+			width: 33% !important;
+			font-size: 2.5em;
+	}
+
+	section.explore div.content_kids,
+	section.explore div.content_teachers,
+	section.explore div.content_researchers  {
+		font-size: 1.7em;
+		margin: 3px -3px;
+	}
+
+	section.get_involved div.support {
+			width: 33% ;
+			font-size: 2.5em;
+			margin-left: -3px;
+	}
+
+	section.get_involved div.volunteer {
+			width: 33%;
+			font-size: 2.5em;
+	}
+
+	section.get_involved div.internships {
+			width: 33%;
+			font-size: 2.5em;
+	}
+
+	section.get_involved div.content_support,
+	section.get_involved div.content_volunteer,
+	section.get_involved div.content_internships  {
+		font-size: 1.7em;
+		margin: 3px -3px;
+	}
+
+	main.exibitions .header_icon img {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	main.exibitions .readmore,
+	main.exibitions .explore_title {
+		font-size: 2em;
+	}
+
+	main.exibitions .explore_content {
+		font-size: 1.5em !important;
+	}
+	main.exibitions div.explore_image {
+		min-height: 400px;
+	}
+
+	main.exibitions .readmore,
+	main.exibitions .explore_title {
+		font-size: 4em;
+	}
+
+	main.exibitions .explore_content {
+		font-size: 2em !important;
+	}
+	main.exibitions div.explore_image {
+		min-height: 600px;
+	}
+
+
+
+	main.events_and_exibitions .content {
+		font-size: 2.2em;
+	}
+
+	main.events_and_exibitions .headline span
+	{
+		font-size: 2.8em !important;
+	}
+
+
+	main.events_and_exibitions .timelocation span {
+		font-size: 3em !important;
+	}
+
+	section.location,
+	section.info {
+		font-size: 2.5em;
+	}
+
+	section.location iframe {
+		width: 80%;
+	}
 }
+
+
+
+
 
 @media only screen and (min-width : 1201px) {
 
