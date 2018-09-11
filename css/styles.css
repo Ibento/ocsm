@@ -981,17 +981,33 @@ footer .address {
 		width: 34%;
 	}
 
+	#logo {
+		margin-top: 20px;
+	}
+
+	#logo img {
+		width: 60%;
+	}
+
 }
 
 @media only screen and (min-width : 520px) and (max-width : 767px) {
 	section.explore_together h1 {
-		font-size: 3em;
+		font-size: 1.9em;
 	}
 	section.explore div.researchers {
 		width: 34%;
 	}
 	section.get_involved div.support {
 		width: 34%;
+	}
+
+	#logo {
+		margin-top: 20px;
+	}
+
+	#logo img {
+		width: 30%;
 	}
 }
 
@@ -1002,7 +1018,7 @@ footer .address {
 	}
 
 	#logo img {
-		width: 30%;
+		width:40%;
 	}
 
 	.navbar-dark .navbar-toggler {
@@ -1014,7 +1030,7 @@ footer .address {
 	}
 
 	header .slogan {
-		font-family: "balboa-plus-inline",sans-serif;
+		font-family: "balboa-plus-fill",sans-serif;
 		font-size: 3em;
 	}
 
