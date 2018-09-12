@@ -301,9 +301,20 @@ section.exibitions .exibition_headlines .headline_small h2 {
 		font-size: 1.7em;
 }
 
+section.exibitions .exibition_headlines .headline_small {
+	margin-top: -100px;
+	margin-left: 20px;
+	margin-bottom: 70px;
+
+	width: 80%;
+	text-align:center;
+	background: #D83203;
+	border: 4px solid #EFF0F2;
+}
+
 section.exibitions .exibition_headlines .headline h3 {
 		color: #F0B202;
-		font-size: 2.3em;
+		font-size: 2.6em;
 }
 
 section.exibitions .content {
@@ -689,6 +700,7 @@ section.events .headline {
 	font-size: 2em;
 	line-height: 1.1;
 	margin-left: -15px;
+	margin-bottom: 25px;
 	font-family: "balboa-plus-fill",sans-serif;
 }
 
@@ -704,7 +716,7 @@ section.events .headline span:nth-child(2) {
 section.events .timelocation {
 	font-size: 1em;
 	font-family: "balboa-plus-fill",sans-serif;
-color: #EFF0F2;
+ 	color: #D83203;
 }
 
 
@@ -974,6 +986,11 @@ footer .address {
 	}
 	section.get_involved div.support {
 		width: 34%;
+	}
+
+
+	section.exibitions .exibition_headlines .headline h3 {
+		font-size: 5em;
 	}
 
 	#logo {
@@ -1643,5 +1660,34 @@ footer .address {
 		 {
 			margin: 0px;
 		}
+
+}
+
+/* Fix for placing exibition banner on the home page on smaller screens */
+
+@media only screen and (max-width : 1201px) {
+
+	section.exibitions .exibition_headlines .headline_small {
+		margin: 0px 0px 30px 0px;
+		padding: 10px 0px;
+		border: 4px solid #EFF0F2;
+	}
+
+
+
+	section.exibitions .exibition_headlines {
+		float: left;
+		width: 60%;
+	}
+
+	section.exibitions .exibition_headlines .headline {
+		font-size: 1.3em;
+  }
+
+	section.exibitions .head_image  {
+		width: 40%;
+	}
+
+
 
 }
