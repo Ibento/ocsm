@@ -137,10 +137,11 @@ nav.navbar {
 	color: #F0B202;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	font-size: 1em;
+.navbar-dark .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+	font-size: 1.1em;
 	font-weight: bold;
 	color: #EFF0F2;
+	width: 10%;
 }
 
 .navbar-dark .navbar-toggler {
@@ -498,6 +499,12 @@ section.explore div.teachers {
 	margin: 0px 3px;
 }
 
+section.explore div.forkids h2,
+section.explore div.teachers h2,
+section.explore div.researchers h2 {
+	padding: 10px;
+}
+
 section.explore div.teachers a {
 	font-size: 1.5em;
 	color: #EFF0F2;
@@ -700,9 +707,9 @@ main.events_and_exibitions section.header .header_icon img {
 }
 
 
+
 section.events .headline {
 	font-size: 2em;
-	line-height: 1.1;
 	margin-left: -15px;
 	margin-bottom: 25px;
 	font-family: "balboa-plus-fill",sans-serif;
@@ -755,8 +762,8 @@ section.location .left {
 	text-align: center;
 }
 
-section.location h2 {
-	font-size: 3em;
+section.location h3 {
+	font-size: 2.5em;
 	font-family: "balboa-plus-primary",sans-serif;
 }
 
@@ -770,8 +777,8 @@ section.info {
 	background-color: #EFF0F2;
 }
 
-section.info h2 {
-	font-size: 3em;
+section.info h3 {
+	font-size: 2.5em;
 	font-family: "balboa-plus-primary",sans-serif;
 }
 
@@ -857,6 +864,11 @@ section.get_involved div.content_internships {
 	padding: 15px 14px 15px 15px;
 }
 
+section.get_involved div.support h2,
+section.get_involved div.volunteer h2,
+section.get_involved div.internships h2 {
+		padding: 10px;
+}
 
 
 
@@ -941,18 +953,30 @@ footer .address {
 			font-size: 2em;
 	}
 
+	section.opening_hours .left {
+		width: 45%;
+	}
+	
+	section.exibitions .exibition_headlines .headline_small {
+		margin-bottom: 10px !important;
+	}
+
+	section.exibitions .exibition_headlines .headline h3 {
+		font-size: 2.2em;
+	}
+
 	section.explore div.forkids a,
 	section.explore div.teachers a,
 	section.explore div.researchers a
 	{
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	section.get_involved div.support a,
 	section.get_involved div.volunteer a,
 	section.get_involved div.internships a
 	{
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	section.newsletter input[type=text] {
@@ -966,7 +990,6 @@ footer .address {
 	iframe {
 		width: 250px;
 	}
-
 
 }
 
@@ -987,6 +1010,18 @@ footer .address {
 
 	#logo img {
 		width: 60%;
+	}
+
+	section.exibitions .exibition_headlines .headline_small {
+		margin-bottom: 10px !important;
+	}
+
+	section.exibitions .exibition_headlines .headline h3 {
+		font-size: 2.2em;
+	}
+
+	section.opening_hours .left {
+		width: 45%;
 	}
 
 }
@@ -1135,6 +1170,9 @@ footer .address {
 		font-size: 1.5em;
 	}
 
+	section.events .headline h3 {
+		line-height: 2em !important;
+	}
 
 	main.events_and_exibitions .headline span,
 	main.events_and_exibitions .timelocation span
@@ -1180,8 +1218,9 @@ footer .address {
 	}
 
 	.navbar-dark .navbar-nav .nav-link {
-		font-size: 2em;
-		font-weight: bold;
+		color: #07288D;
+		font-family: "balboa-plus-primary", sans-serif !important;
+		font-size: 2.2em;
 	}
 
 	section.explore_together h1 {
@@ -1298,6 +1337,9 @@ footer .address {
 		font-size: 1.7em;
 		margin: 3px -3px;
 	}
+	section.events .headline h3 {
+		line-height: 2em !important;
+	}
 
 	section.get_involved div.support {
 			width: 33% ;
@@ -1389,6 +1431,8 @@ footer .address {
 
 		.navbar-dark .navbar-nav .nav-link {
 			color: #07288D;
+			font-family: "balboa-plus-primary", sans-serif !important;
+			font-size: 2.7em;
 		}
 
 		section.explore_together .headline {
@@ -1435,10 +1479,6 @@ footer .address {
 		}
 
 
-		.navbar-dark .navbar-nav .nav-link {
-			font-size: 2em;
-			font-weight: bold;
-		}
 
 		section.explore_together h1 {
 			font-size: 1.4em;
